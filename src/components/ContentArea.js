@@ -22,6 +22,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
     "&:hover": {
       boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)"
+      //paddingLeft:10, not working as it should
     }
   },
   media: {
@@ -56,7 +57,7 @@ export default function RecipeReviewCard() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+            PG
           </Avatar>
         }
         action={
@@ -64,19 +65,18 @@ export default function RecipeReviewCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
+        title="Chemistry - Neutralisation Reaction"
         subheader="September 14, 2016"
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="Paella dish"
+        image="https://image.freepik.com/free-vector/illustration-chemistry-laboratory-instruments-set_53876-80331.jpg"
+        title="Neutralisation"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your
-          guests. Add 1 cup of frozen peas along with the mussels, if you like.
-        </Typography>
+        A neutralization reaction is when an acid and a base react to form water and a salt and involves the combination of H+ ions and OH- ions to generate water. The neutralization of a strong acid and strong base has a pH equal to 7.
+         </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
