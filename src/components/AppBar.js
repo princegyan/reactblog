@@ -53,9 +53,9 @@ const useStyles = makeStyles(theme => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: 120,
+      width: 200,
       '&:focus': {
-        width: 200,
+        width: 300,
       },
     },
   },
@@ -77,7 +77,7 @@ export default function SearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            University of Cape Coast
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
